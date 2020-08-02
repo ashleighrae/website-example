@@ -1,4 +1,4 @@
-# Greek Resort Themed Website Example ⚡️
+# Ancient Greek Themed Website Example ⚡️
 
 ![Alt Text](https://github.com/ashleighrae/website-example/blob/master/website.gif)
 
