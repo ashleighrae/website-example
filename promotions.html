@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Athena Resort | Promotions</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Body -->
+
+<body class="page-promotions">
+
+	<!-- JS -->
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- Main Menu Nav -->
+	<nav id="main-menu">
+
+		<a id="menu-logo" href="index.html">
+
+			<figure>
+				<img src="images/logo_blue.png" alt="Athena Resort logo">
+			</figure>
+
+			<h1>Athena</h1>
+			<h1 id="sub">Resort</h1>
+
+		</a>
+
+		<!-- Mobile Nav -->
+		<a class="icon">
+			<i class="fa fa-bars">
+			</i>
+			<p>Menu</p>
+		</a>
+
+		<nav id="mobileNav">
+			<a href="index.html">Home</a>
+			<a href="accomodation.html">Accomodation</a>
+			<a href="our-resort.html">Our Resort</a>
+			<a href="tours.html">Tours</a>
+			<a href="gallery.html">Gallery</a>
+		</nav>
+
+		<!-- Desktop Nav -->
+		<ul id="desktop-menu">
+			<li>
+				<a href="tours.html">Tours</a>
+			</li>
+			<li class="drop-menu">
+				<a href="accomodation.html" class="drop">Accomodation</a>
+				<div class="dropdown">
+					<a href="rooms-suites.html">Rooms & Suites</a>
+					<a href="arrival-amenities.html">Arrival Amenities</a>
+				</div>
+			</li>
+			<li class="drop-menu">
+				<a href="our-resort.html" class="drop">Our Resort</a>
+				<div class="dropdown">
+					<a href="gallery.html">Gallery</a>
+					<a href="promotions.html" class="current">Promotions</a>
+					<a href="amenities.html">Amenities</a>
+				</div>
+			</li>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+		</ul>
+
+		<nav class="book-button">
+			<a href="book.html">Book Now</a>
+		</nav>
+
+	</nav>
+
+	<!-- Page Header -->
+	<header id="page-header">
+
+		<section class="banner-title">
+
+			<h2>Promotions</h2>
+
+		</section>
+
+	</header>
+
+	<!-- Main Page Content -->
+	<section id="main-info">
+
+		<h3>Current Packages</h3>
+
+		<div class="info-top">
+
+			<article>
+
+				<h4>Aphrodite Package</h4>
+
+				<p>A romantic package for two guaranteed to make your stay. Perfect for all couples.
+				</p>
+
+				<hr>
+
+				<p class="promo">A welcome bottle of champagne.</p>
+
+				<hr>
+
+				<p class="promo">Nightly three-course dinner for two.</p>
+
+				<hr>
+
+				<nav class="read-more">
+					<a href="book.html">Book Now</a>
+				</nav>
+
+			</article>
+
+			<figure>
+				<img src="images/aphrodite.png" alt="Rose petals on a pink background.">
+			</figure>
+
+		</div>
+
+		<div class="info-bottom">
+
+			<article>
+
+				<h4>Ambrosia Package</h4>
+
+				<p>Indulge like a Greek God. This package includes everything that a food-lover could
+					want.</p>
+
+				<hr>
+
+				<p class="promo">Daily breakfast for two.</p>
+
+				<hr>
+
+				<p class="promo">Nightly four-course dinner for two.</p>
+
+				<hr>
+
+				<nav class="read-more">
+					<a href="book.html">Book Now</a>
+				</nav>
+
+			</article>
+
+			<figure>
+				<img src="images/food.png" alt="Greek food platter with a variety of vegetables on wooden board.">
+			</figure>
+
+		</div>
+
+		<div class="info-top">
+
+			<article>
+
+				<h4>Hypnos Package</h4>
+
+				<p>A relaxing package for one. Make the most of your relaxing stay with us.</p>
+
+				<hr>
+
+				<p class="promo">A welcome bottle of red wine.</p>
+
+				<hr>
+
+				<p class="promo">A $300 Spa voucher for one.</p>
+
+				<hr>
+
+				<nav class="read-more">
+					<a href="book.html">Book Now</a>
+				</nav>
+
+			</article>
+
+			<figure>
+				<img src="images/hypnos.png" alt="Facial oils, clay and flowers on a marble bench.">
+			</figure>
+
+		</div>
+
+		<div class="modal">
+			<span class="close">Close &times;</span>
+			<img class="modal-image" id="image" src="images/accessible.png"
+				alt="Accessible hotel room with queen bed and black, white and gold decor.">
+			<div id="caption"></div>
+		</div>
+
+	</section>
+
+	<!-- Page Footer -->
+	<footer id="page-footer">
+
+		<nav id="secondary-menu">
+			<ul>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="directions.html">Directions</a>
+				</li>
+				<li>
+					<a href="reviews.html">Reviews</a>
+				</li>
+			</ul>
+		</nav>
+
+		<p class="contact"><b>Athena Resort:</b> Rovertou Galli 5, Athina 117 42, Greece</p>
+
+		<p class="contact"><b>Phone:</b> +30 12 3456 7890</p>
+
+		<p>@2020 Athena Resort Group</p>
+
+	</footer>
+
+</body>
+
+</html>

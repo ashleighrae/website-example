@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Athena Resort | Book Now</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Body -->
+
+<body class="page-book">
+
+	<!-- JS -->
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- Main Menu Nav -->
+	<nav id="main-menu">
+
+		<a id="menu-logo" href="index.html">
+
+			<figure>
+				<img src="images/logo_blue.png" alt="Athena Resort logo">
+			</figure>
+
+			<h1>Athena</h1>
+			<h1 id="sub">Resort</h1>
+
+		</a>
+
+		<!-- Mobile Nav -->
+		<a class="icon">
+			<i class="fa fa-bars">
+			</i>
+			<p>Menu</p>
+		</a>
+
+		<nav id="mobileNav">
+			<a href="index.html">Home</a>
+			<a href="accomodation.html">Accomodation</a>
+			<a href="our-resort.html">Our Resort</a>
+			<a href="tours.html">Tours</a>
+			<a href="gallery.html">Gallery</a>
+		</nav>
+
+		<!-- Desktop Nav -->
+		<ul id="desktop-menu">
+			<li>
+				<a href="tours.html">Tours</a>
+			</li>
+			<li class="drop-menu">
+				<a href="accomodation.html" class="drop">Accomodation</a>
+				<div class="dropdown">
+					<a href="rooms-suites.html">Rooms & Suites</a>
+					<a href="arrival-amenities.html">Arrival Amenities</a>
+				</div>
+			</li>
+			<li class="drop-menu">
+				<a href="our-resort.html" class="drop">Our Resort</a>
+				<div class="dropdown">
+					<a href="gallery.html">Gallery</a>
+					<a href="promotions.html">Promotions</a>
+					<a href="amenities.html">Amenities</a>
+				</div>
+			</li>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+		</ul>
+
+		<nav class="book-button">
+			<a href="book.html">Book Now</a>
+		</nav>
+
+	</nav>
+
+	<!-- Page Header -->
+	<header id="page-header">
+
+		<section class="banner-title">
+
+			<h2>Book Now</h2>
+
+		</section>
+
+	</header>
+
+	<!-- Main Page Content -->
+	<section id="main-info">
+
+		<h3>Book Your Stay at Athena Resort</h3>
+
+		<div id="booking-info">
+
+			<form method="get" action="book.html">
+
+				<fieldset>
+
+					<!-- Personal Details -->
+
+					<div class="form-item">
+						<label for="form-full-name">Name:</label>
+						<div class="form-element">
+							<input type="text" name="full_name" id="form-full-name"
+								placeholder="First and last names" />
+						</div>
+					</div>
+
+					<div class="form-item">
+						<label for="form-email">Email:</label>
+						<div class="form-element"></div>
+						<input type="text" name="email" id="form-email" placeholder="Valid email address" />
+					</div>
+
+
+					<div class="form-item">
+						<label for="form-phone">Phone:</label>
+						<div class="form-element">
+							<input type="tel" name="phone" id="form-phone" placeholder="Please include country code" />
+						</div>
+					</div>
+
+					<div class="form-item">
+						<label for="form-country">Country:</label>
+						<div class="form-element">
+							<input type="text" name="country" id="form-country" placeholder="Country of residence" />
+						</div>
+					</div>
+
+					<!-- Booking Details -->
+
+					<div class="row">
+
+						<div class="form-item">
+							<label for="form-arrival"><i class="fa fa-calendar"></i> Arrival:</label>
+							<div class="form-element">
+								<input type="date" name="arrival" id="form-arrival" />
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-departure"><i class="fa fa-calendar"></i> Departure:</label>
+							<div class="form-element">
+								<input type="date" name="arrival" id="form-departure" />
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-email"><i class="fa fa-gift"></i> Discount Code:</label>
+							<div class="form-element">
+								<input type="text" name="code" id="form-code" placeholder="Enter valid code" />
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-guests"><i class="fa fa-male"></i> Guests:</label>
+							<div class="form-element">
+								<select name="guests" id="form-guests">
+									<option value="one">1</option>
+									<option value="two">2</option>
+									<option value="three">3</option>
+									<option value="three">4</option>
+									<option value="three">>4</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-room"><i class="fa fa-bed"></i> Room:</label>
+							<div class="form-element">
+								<select name="room" id="form-room">
+									<option value="onebed">Erichthonius Suite (Studio)</option>
+									<option value="onebed">Erichthonius Suite (1BR)</option>
+									<option value="twobed">2BR Erichthonius Suite (2BR)</option>
+									<option value="athenasuite">Athena's Suite</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-tour"><i class="fa fa-bus"></i> Tour:</label>
+							<div class="form-element">
+								<select name="tour" id="form-tour">
+									<option value="none">None</option>
+									<option value="general">General Tour</option>
+									<option value="all-inclusive">All Inclusive Tour</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="form-item">
+						<label for="form-comments">Other requirements:</label>
+						<div class="form-element">
+							<textarea id="form-comments" name="comments" rows="5"
+								placeholder="Please specify any special requirements or packages here."></textarea>
+						</div>
+					</div>
+
+
+					<!-- Payment Details -->
+
+					<div class="row">
+
+						<div class="form-item">
+							<label for="form-card-name">Name on Card:</label>
+							<div class="form-element">
+								<input type="text" name="card-name" id="form-card-name" placeholder="Full Name" />
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-card-number">Card Number:</label>
+							<div class="form-element">
+								<input type="number" name="card-number" id="form-card-number"
+									placeholder="Full Number" />
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-exp-month">Exp Month:</label>
+							<div class="form-element">
+								<input type="month" name="expmonth" id="form-exp-month" />
+							</div>
+						</div>
+
+						<div class="form-item">
+							<label for="form-card-cvc">CVC:</label>
+							<div class="form-element">
+								<input type="number" name="card-cvc" id="form-card-cvc" placeholder="CVC Number" />
+							</div>
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<!-- Button -->
+				<fieldset>
+					<button type="submit">Confirm Booking</button>
+				</fieldset>
+
+			</form>
+
+		</div>
+
+		<hr>
+
+		<article>
+
+			<h4>Other Methods of Booking:</h4>
+
+			<p><b>Phone:</b> +30 12 3456 7890</p>
+
+			<p><b>Email:</b> info@athenaresort.gr</p>
+
+			<p id="book">If you are having trouble booking,
+				please do not hesitate to <a href="contact.html">contact us</a>.</p>
+
+		</article>
+
+	</section>
+
+	<!-- Page Footer -->
+	<footer id="page-footer">
+
+		<nav id="secondary-menu">
+			<ul>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="directions.html">Directions</a>
+				</li>
+				<li>
+					<a href="reviews.html">Reviews</a>
+				</li>
+			</ul>
+		</nav>
+
+		<p class="contact"><b>Athena Resort:</b> Rovertou Galli 5, Athina 117 42, Greece</p>
+
+		<p class="contact"><b>Phone:</b> +30 12 3456 7890</p>
+
+		<p>@2020 Athena Resort Group</p>
+
+	</footer>
+
+</body>
+
+</html>

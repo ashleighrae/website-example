@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Athena Resort | Tours</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Body -->
+
+<body class="page-tours">
+
+	<!-- JS -->
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- Pop-Up Content -->
+	<div id="popup" class="popup-container">
+		<div class="popup-message">
+			<span class="exit">&times;</span>
+			<p>Congratulations! You unlocked a 10% discount code!<br>Enter Code: <b>BOOKING10</b> at checkout</p>
+		</div>
+	</div>
+
+	<!-- Main Menu Nav -->
+	<nav id="main-menu">
+
+		<a id="menu-logo" href="index.html">
+
+			<figure>
+				<img src="images/logo_blue.png" alt="Athena Resort logo">
+			</figure>
+
+			<h1>Athena</h1>
+			<h1 id="sub">Resort</h1>
+
+		</a>
+
+		<!-- Mobile Nav -->
+		<a class="icon">
+			<i class="fa fa-bars">
+			</i>
+			<p>Menu</p>
+		</a>
+
+		<nav id="mobileNav">
+			<a href="index.html">Home</a>
+			<a href="accomodation.html">Accomodation</a>
+			<a href="our-resort.html">Our Resort</a>
+			<a href="tours.html" class="current">Tours</a>
+			<a href="gallery.html">Gallery</a>
+		</nav>
+
+		<!-- Desktop Nav -->
+		<ul id="desktop-menu">
+			<li class="current">
+				<a href="tours.html">Tours</a>
+			</li>
+			<li class="drop-menu">
+				<a href="accomodation.html" class="drop">Accomodation</a>
+				<div class="dropdown">
+					<a href="rooms-suites.html">Rooms & Suites</a>
+					<a href="arrival-amenities.html">Arrival Amenities</a>
+				</div>
+			</li>
+			<li class="drop-menu">
+				<a href="our-resort.html" class="drop">Our Resort</a>
+				<div class="dropdown">
+					<a href="gallery.html">Gallery</a>
+					<a href="promotions.html">Promotions</a>
+					<a href="amenities.html">Amenities</a>
+				</div>
+			</li>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+		</ul>
+
+		<nav class="book-button">
+			<a href="book.html">Book Now</a>
+		</nav>
+
+	</nav>
+
+	<!-- Page Header -->
+	<header id="page-header">
+
+		<section class="banner-title">
+
+			<h2>Ancient Greece<br>Celebrity Tours</h2>
+
+		</section>
+
+	</header>
+
+	<!-- Main Page Content -->
+	<section id="main-info">
+
+		<h3>Our Tours</h3>
+
+		<p class="description"> Experience a friendly, engaging and insightful tour of Ancient Greece! Tour the
+			Parthenon,
+			Old Temple of Athena, the celebrity homes of Plato and Aristotle and much more. Travel with ease in our
+			luxurious temperature-controlled double-decker tour bus. Our resorts runs daily tours that explore the
+			beauty of
+			Ancient Greece. You can choose
+			from our 3 hour General Celebrity Homes & Hotspots Tour or our 5 hour All-Inclusive Celebrity Homes &
+			Hotspots Tour (which includes lunch). Who knows? You may even get the opportunity to see these celebrities
+			yourself. For more
+			information or to specify food allergies or preferences, please <a href="contact.html">contact us</a>.
+		</p>
+
+		<h4 id="table-header"> About our tours & landmarks: </h4>
+
+		<p class="tour-para">Each tour will spend 30 minutes or more at the temple of Athena, Perthenon and touring
+			celebrity homes.
+			However, the All-Inclusive Tour will tour the Acropolis of Athens and the Temple of Olypian Zeus also.</p>
+
+		<table id="tour_table">
+			<tr>
+				<th>Landmark</th>
+				<th>General Tour</th>
+				<th>All-Inclusive Tour</th>
+			</tr>
+			<tr>
+				<td><b>Temple of Athena</b></td>
+				<td>30 minute stop</td>
+				<td>30 minute stop</td>
+			</tr>
+			<tr>
+				<td><b>Parthenon</b></td>
+				<td>30 minute stop</td>
+				<td>30 minute stop</td>
+			</tr>
+			<tr>
+				<td><b>Celebrity Homes</b></td>
+				<td>60 minute drive-by</td>
+				<td>60 minute drive-by</td>
+			</tr>
+			<tr>
+				<td><b>Acropolis of Athens</b></td>
+				<td>-</td>
+				<td>60 minute stop <br>(lunch-break)</td>
+			</tr>
+			<tr>
+				<td><b>Temple of Olympian Zeus</b></td>
+				<td>-</td>
+				<td>30 minute stop</td>
+			</tr>
+		</table>
+
+		<div id="tour-info">
+
+			<article>
+
+				<h4>General Tour</h4>
+
+				<figure>
+					<img src="images/tour.png" alt="Ancient Greek celebrity tour site on a mountain.">
+				</figure>
+
+				<p class="tour-description">Experience the most famous sightseeing tour of Ancient Greece! Our Celebrity
+					Homes tour is
+					thoroughly narrated by our friendly and engaging tour guides. Visit the Old Temple of
+					Athena, the
+					Parthenon and the famous homes of Plato and Aristotle. Don't forget your camera! You may get the
+					chance to see some of your favourite icons. </p>
+
+				<nav class="accordion-button">
+					<a>Tour Information</a>
+				</nav>
+				<div class="accordion">
+					<p><b>Duration:</b> <br>Approximately 3 hours</p>
+					<p><b>Departing Location:</b> <br>Athena Resort</p>
+					<p><b>Departure Times:</b> <br>Every hour from 11:00am to 4:00pm</p>
+				</div>
+
+				<nav class="accordion-button">
+					<a>Pricing</a>
+				</nav>
+				<div class="accordion">
+					<p><b>Adults (ages 18+):</b> <br>$50</p>
+					<p><b>Children (ages 4-17):</b> <br>$30</p>
+					<p><b>Infants (ages 3 and under):</b> <br>$10</p>
+				</div>
+
+				<nav class="read-more">
+					<a href="book.html">Book This Tour</a>
+				</nav>
+
+			</article>
+
+			<article>
+
+				<h4>All Inclusive Tour</h4>
+
+				<figure>
+					<img src="images/tour_two.png"
+						alt="Ancient Greek statue with spear and shield, surrounded by a blue sky.">
+				</figure>
+
+				<p class="tour-description">Our most comprehensive tour of Ancient Greece! This all-inclusive tour lets
+					you
+					to visit
+					everything
+					that Ancient Greece has to offer, with 4 major stops. See the
+					Ancient
+					Temple of Athena, the Parthenon, the Acropolis of Athens, the Temple of Olympian Zeus, the
+					celebrity homes of Plato and Aristotle, and much more along the way. Lunch included.</p>
+
+				<nav class="accordion-button">
+					<a>Tour Information</a>
+				</nav>
+				<div class="accordion">
+					<p><b>Duration:</b> <br>Approximately 5 hours</p>
+					<p><b>Departing Location:</b> <br>Athena Resort</p>
+					<p><b>Departure Times:</b> <br>Approximately 11:00am (daily)</p>
+				</div>
+
+				<nav class="accordion-button">
+					<a>Pricing</a>
+				</nav>
+				<div class="accordion">
+					<p><b>Adults (ages 18+):</b> <br>$80</p>
+					<p><b>Children (ages 4-17):</b> <br>$50</p>
+					<p><b>Infants (ages 3 and under):</b> <br>$10</p>
+				</div>
+
+				<nav class="read-more">
+					<a href="book.html">Book This Tour</a>
+				</nav>
+
+			</article>
+
+		</div>
+
+		<div class="modal">
+			<span class="close">Close &times;</span>
+			<img class="modal-image" id="image" src="images/accessible.png"
+				alt="Accessible hotel room with queen bed and black, white and gold decor.">
+			<div id="caption"></div>
+		</div>
+
+		<hr>
+
+		<section id="video">
+
+			<h4>A Tour Video Courtesy of One of Our Guests</h4>
+
+			<video id="guestVideo" width="500" autoplay muted loop>
+				<source src="images/guestVideo.mp4" type="video/mp4">
+				Your browser does not support HTML video.
+			</video>
+
+			<br>
+
+			<br>
+
+			<nav class="video-controls">
+				<button>Play</button>
+				<button>Pause</button>
+				<button id="coupon">x2</button>
+				<button>x1</button>
+			</nav>
+
+		</section>
+
+	</section>
+
+	<!-- Page Footer -->
+	<footer id="page-footer">
+
+		<nav id="secondary-menu">
+			<ul>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="directions.html">Directions</a>
+				</li>
+				<li>
+					<a href="reviews.html">Reviews</a>
+				</li>
+			</ul>
+		</nav>
+
+		<p class="contact"><b>Athena Resort:</b> Rovertou Galli 5, Athina 117 42, Greece</p>
+
+		<p class="contact"><b>Phone:</b> +30 12 3456 7890</p>
+
+		<p>@2020 Athena Resort Group</p>
+
+	</footer>
+
+</body>
+
+</html>

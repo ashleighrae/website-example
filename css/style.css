@@ -1,0 +1,1059 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Body default CSS */
+body {
+	font-family: 'Lora', serif, sans-serif;
+	font-size: 14px;
+	line-height: 1em;
+	text-align: center;
+	color: black;
+	height: 100%;
+	background: white;
+	animation: fadeIn ease-in 2s; /* Fade in each page */
+}
+
+/* Main Menu */
+#main-menu {
+	background-color: white;
+	padding: 1.8em;
+	width: 100%;
+	z-index: 1000; /* Set in front of other objects (i.e. header) */
+	border-bottom: 1px solid #5e7081; /* Set bottom border for distinction from rest of page */
+}
+
+/* Main Menu Logo */
+#main-menu #menu-logo {
+	padding: 0 0 0.25em 0;
+}
+
+#menu-logo:hover {
+	animation: grow 1.5s ease infinite; /* Animate logo when users hover, so they know to click */
+}
+
+#menu-logo img {
+	width: 5em;
+}
+
+/* Heading 1 Style */
+#menu-logo h1 {
+	font-family: 'Lora', serif, sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	line-height: 1em;
+	color: #5e7081;
+	text-transform: uppercase;
+}
+
+#menu-logo #sub {
+	font-family: 'Alegreya Sans SC', sans-serif, serif;  /* Set secondary H1 font */
+	font-size: 1em;
+}
+
+/* Home Page Menu Logo */
+body.page-index #menu-logo {
+	animation: grow 1s ease 4s; /* Animation on home page menu logo */
+}
+
+/* Primary Navigation */
+#main-menu ul {
+	width: 100%;
+	float: right;
+	margin: auto;
+	list-style-type: none;
+}
+
+#main-menu li {
+	padding: 0.1em 0.5em;
+	float: right;
+}
+
+/* Main Nav Links */
+#main-menu a, #main-menu li.current .dropdown a {
+	font-family: 'Alegreya Sans SC', sans-serif, serif;
+	padding: 0.25em 1em;
+	font-weight: 500;
+	font-size: 2em;
+	color: #535353;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	margin: auto;
+}
+
+#main-menu ul a:hover, #mobileNav a:hover {
+	background: #90a5b9; /* Highlight nav links when hovering over them */
+	color: white;
+}
+
+/* Current Page Link */
+#main-menu li.current a, #secondary-menu ul li.current a, #main-menu .dropdown .current, #mobileNav .current {
+	font-weight: 700; /* Bold current page link */
+	color: black;
+}
+
+/* Primary Navigation Dropdown Menus */
+li.drop-menu {
+	display: inline-block;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 10em;
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15);
+	z-index: 1000;
+	overflow: hidden;
+}
+
+#main-menu .dropdown a {
+	text-align: left;
+}
+  
+.drop-menu:hover .dropdown, .current:hover .dropdown {
+	display: block;
+	animation: fadeIn ease-in 0.2s; /* Fade in dropdown menus */
+}
+
+#main-menu li.current .dropdown a:hover {
+	color: white;
+}
+
+#main-menu .drop-menu:hover .drop, #main-menu .current:hover .drop {
+	color: white;
+	background-color: #5e7081;
+	animation: fadeIn ease-in 0.2s; /* Fade in dropdown menus link highlighting */
+}
+
+/* Mobile Menu Display */
+
+/* Mobile Menu Icon */
+body.js .icon {
+	cursor: pointer; /* Show that user can click to open menu when JS is enabled */
+}
+
+.icon i {
+	font-size: 2em;
+	margin: auto;
+}
+
+.icon p {
+	line-height: 1em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* Mobile Nav Menu */
+#main-menu #mobileNav {
+	display: block; /* Show by default in case JS not available */
+	padding: 0.5em;
+}
+
+body.js #main-menu #mobileNav {
+	display: none; /* Hide by default when JS available */
+}
+
+#mobileNav a {
+	font-size: 2.5em;
+	padding: 0.8em;
+}
+  
+/* Book Now Button */
+#main-menu .book-button {
+	position: relative;
+	margin: auto;
+}
+
+#main-menu .book-button a {
+	font-family: 'Merriweather', serif, sans-serif;
+	color: white;
+	line-height: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	background-color: #90a5b9;
+	padding: 0.8em;
+}
+
+#main-menu .book-button a:hover {
+	background-color: rgb(166, 187, 207); /* Change background colour on hover */
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.15); /* Add box shadow on hover */
+}
+
+#main-menu .book-button a:active {
+	transform: translate(0px,5px); /* Translate button downward on press */
+}
+
+/* Page Header */
+#page-header {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	background-size: cover;
+	background-position: center center;
+	height: 60em;
+	overflow: hidden; /* Do not show header overflow */
+	max-width: 100%;
+}
+
+#page-header .banner-title {
+	padding: 20em 0;
+}
+
+/* Heading 2 Style */
+#page-header .banner-title h2 {
+	font-weight: 300;
+	font-size: 3em;
+	line-height: 1em;
+	color: white;
+	text-transform: uppercase;
+	text-shadow:  0px 4px 3px rgba(0,0,0,0.4); /* Add text shadow to make text stand out */
+	z-index: 3; /* Page heading sits in front of background image */
+}
+
+/* Home Page Header */
+body.page-index #page-header .banner-title h2 {
+	transform: translateY(-600px);
+	animation: drop 1.5s ease-in forwards 1s; /* Page heading drops down onto page header upon page load */
+}
+
+body.page-index .banner-title:active {
+	animation: shake 3s ease-in; /* Shake banner title when user presses down on home page header */
+}
+
+body.page-index .banner-title {
+	cursor: pointer; /* Show user that header can be clicked on as easter egg (coupon pop-up) */
+}
+
+/* Home page header */
+body.page-index #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 60%, transparent 40%), url(../images/hotel_view.png);
+}
+
+/* Our Resort page header */
+body.page-our-resort #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 60%, transparent 40%), url(../images/exterior.png);
+}
+
+/* Tours page header */
+body.page-tours #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 60%, transparent 40%), url(../images/columns.png);
+}
+
+/* Accomodation page header */
+body.page-accomodation #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%, transparent 70%), url(../images/coffee.png);
+}
+
+/* Directions page header */
+body.page-directions #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%, transparent 70%), url(../images/directions.png);
+}
+
+/* Contact Us page header */
+body.page-contact-us #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/contact.png);
+}
+
+/* Promotions page header */
+body.page-promotions #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/promotions.png);
+}
+
+/* Amenities page header */
+body.page-amenities #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/spa.png);
+}
+
+/* Rooms & Suites page header */
+body.page-rooms-suites #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/room.png);
+}
+
+/* Review page header */
+body.page-reviews #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/reviews.png);
+}
+
+/* Arrival Amenities page header */
+body.page-arrival-amenities #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/arrival-amenities.png);
+}
+
+/* Book Now page header */
+body.page-book #page-header {
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 90%, transparent 70%), url(../images/book-now.png);
+}
+
+/* Main Body Content */
+#main-info {
+	padding: 3em;
+	overflow: hidden;
+	margin: auto;
+}
+
+/* Main Heading 3 Style */
+#main-info > h3, #slideshow > h3, #room-quiz > h3 {
+	font-family: 'Merriweather',serif, sans-serif;
+	font-weight: 600;
+	line-height: 1em;
+	text-transform: uppercase;
+	padding-bottom: 1em;
+	font-size: 3em;
+}
+
+/* Main Figure styling */
+#main-info figure {
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+	justify-content: center;
+	padding: 1em;
+}
+
+/* Main Image and iFrame Styling */
+#main-info figure img,  #main-info iframe {
+	width: 100%;
+	height: auto;
+	border: none;
+	object-fit: cover;
+}
+
+/* Main Heading 4 Styling */
+#main-info h4, #video h4, #slideshow h4 {
+	font-family: 'Merriweather', serif, sans-serif;
+	font-size: 2.5em;
+	color: black;
+	line-height: 1em;
+	padding: 1em 0 1em 0;
+}
+
+/* Main Paragraph  Styling */
+#main-info p {
+	font-family: 'Lato', sans-serif, serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+/* Main Active Link Styling */
+.read-more a {
+	color: #75572B;
+	font-weight: bold;
+	font-size: 1.8em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.read-more a:hover, .description a:hover, #review a:hover, #book a:hover {
+	text-decoration: none; /* On hover, remove active link underline */
+}
+
+/* Main Horizontal Rule Styling */
+hr {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/* Page Footer */
+#page-footer {
+	text-transform: uppercase;
+}
+
+/* Footer Navigation */
+#secondary-menu {
+	padding: 1.5em;
+	background-color: rgb(166, 187, 207);
+}
+
+#secondary-menu li {
+	list-style: none;
+	margin: 2.5em;
+}
+
+#secondary-menu a {
+	font-family: 'Alegreya Sans SC', sans-serif, serif;
+	font-size: 2em;
+	font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    text-transform: uppercase;
+	padding: 1em;
+}
+
+#secondary-menu a:hover {
+	color: white; /* On hover, change active link colour */
+}
+
+/* Page Footer Paragraph Styling */
+#page-footer p {
+	padding: 0.8em;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+/* Page Footer Contact Information */
+.contact {
+	text-align: left;
+}
+
+/* Our Resort Page */
+
+/* Description Active Link */
+.description a {
+	color: #75572B;
+	font-weight: 800;
+}
+
+#bibliography {
+	text-align: left;
+}
+
+/* Tour Page */
+#tour-info figure img {
+	padding-bottom: 1em;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tour-info {
+	padding-top: 3em;
+}
+
+#tour-info article {
+	padding-bottom: 3em;
+	margin: auto;
+	width: 100%;
+}
+
+.tour-description {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.8em;
+}
+
+/* Tour Table */
+table {
+	font-family: 'Lato', sans-serif, serif;
+	width:60%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+  
+#tour_table th, td {
+	padding: 15px;
+	text-align: left;
+	text-align: center;
+}
+
+#tour_table tr:nth-child(even) {
+	background-color:white; /* Set even table row background colour */
+}
+
+#tour_table tr:nth-child(odd) {
+   background-color: #e4eaf0; /* Set odd table row background colour */
+ }
+
+#tour_table th {
+	background-color: #5e7081; /* Set table heading background colour */
+	color: white;
+}
+
+/* Accordion Menu */
+#tour-info article .accordion-button {
+	display: none; /* Hide accordion menu when JavaScript is not enabled */
+}
+
+body.js #tour-info article .accordion-button {
+	display: block; /* Show accordion menu when JavaScript is enabled */
+	cursor: pointer; /* Show that user can click on accordion menu */
+	font-size: 1.5em;
+	font-weight: 700;
+	background-color: #90a5b9;
+	color: white;
+	padding: 1em;
+	border: none;
+	outline: none;
+	margin-bottom: 1em;
+	text-align: left;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+  
+body.js .accordion-button:hover {
+	background-color: rgb(166, 187, 207); /* On hover, change background colour of accordion menu */
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.15); /* On hover, cadd box shadow to accordion menu */
+}
+
+.accordion {
+	display: block; /* Show accordion info when JavaScript is not enabled */
+}
+  
+body.js .accordion {
+	display: none; /* Hide accordion info when JavaScript is enabled */
+	background-color: white;
+	overflow: hidden;
+	margin: auto;
+}
+
+body.js .accordion p {
+	text-align: left;
+	margin-left: 2em; /* Indent accordion info paragraphs */
+}
+
+body.js .accordion-button:after {
+	content: "\002B"; /* While closed, accordion menu shows unicode character for (+) */
+	font-size: 2em;
+	color: white;
+	float: right;
+	margin: auto;
+}
+
+body.js .expanded:after {
+	content: "\2212"; /* Show unicode character for (-) when accordion is expanded */
+}
+
+/* Tour Video Specifications */
+video {
+	max-width: 100%;
+}
+
+body.js .video-controls button {
+	display: inline; /* Display video controls only if JS is enabled */
+}
+
+.video-controls button {
+	display: none; /* Video controls not shown if JS is disabled (video autoplays) */
+}
+
+/* Rooms & Suites Page */
+
+/* Room Personalised Quiz */
+#room-quiz {
+	display: none; /* Hide quiz when JS is disabled */
+}
+
+body.js #room-quiz {
+	display: block; /* Display quiz when JS is enabled */
+}
+
+#room-quiz fieldset .form-item > label,
+#room-quiz fieldset .form-item .form-element {
+	line-height: 1.2em;
+	text-align: center;
+	display: block;
+	text-align: left;
+	margin: auto;
+}
+
+#room-quiz fieldset .form-item .form-element {
+	font-size: 2.5em;
+}
+
+input[type="radio"] {
+	width: 1em;
+	height: 1em;
+	margin: 0.2em;
+	box-shadow: none;
+}
+
+#room-quiz .results {
+	font-size: 3em;
+	color: #5e7081;
+	font-weight: bold;
+	border: 2px outset #75572B;
+	border-radius: 6px;
+}
+
+/* Promotion Page */
+
+/* Secondary Descriptions */
+#main-info .promo {
+	font-size: 1.2em;
+	margin: auto;
+}
+
+/* Gallery Page */
+#slideshow article {
+	margin: auto;
+}
+
+#slideshow h3 {
+	padding-top: 2em;
+	padding-bottom: 0;
+}
+
+#slideshow img {
+	width: 80%;
+	border-radius: 10px;
+	padding: 0 0 1em 1em;
+}
+
+#slideshow h4 {
+	text-transform: uppercase;
+	font-size: 2em;
+	margin-top: 1.5em;
+	padding: 1em;
+	color: #5e7081;
+}
+
+#slideshow nav {
+	display: none; /* Hide gallery navigation when JS is not enabled */
+	text-align: center;
+}
+
+body.js #slideshow nav {
+	display: block; /* Display gallery navigation when JS is enabled */
+	margin-bottom: 2em;
+	margin-top: 1em;
+}
+
+body.js #slideshow nav span {
+	cursor: pointer; /* Show user that they can click on object */
+	margin: 0 1em;
+	font-weight: bold;
+	font-size: 2em;
+	color: white;
+	background-color: black;
+	padding: 0.5em 1em;
+	border-radius: 0.1em;
+}
+
+body.js #slideshow nav span:hover {
+	background-color:#5e7081; /* Change background colour on hover */
+}
+
+/* Directions Page */
+#main-info iframe {
+	width: 50em;
+	height: 40em;
+}
+
+/* Booking Page */
+.row {
+	display: flex; /* Allow form items to be on same row */
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+/* Review/Booking Page */
+
+/* Secondary Paragraph (Under Reviews/Booking Form) */
+#review, #book {
+	color: #535353;
+	padding-top: 3em;
+}
+
+#review a, #book a {
+	color: #5e7081;
+	font-weight: 800;
+}
+
+/* Set form icon size */
+.form-item i {
+	font-size: 1.5em; 
+}
+
+/* Form-related layout*/
+fieldset {
+    border: 0;
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-top: 2vw;
+}
+
+/* Form Item Styling */
+fieldset .form-item {
+	font-family: 'Merriweather',serif, sans-serif;
+	margin-bottom: 1em;
+	margin: auto;
+	padding: 1.5em;
+	text-align: left;
+}
+
+fieldset .form-item > label {
+    font-weight: bold;
+	font-size: 2.5em;
+}
+
+fieldset .form-item .form-element {
+	width: 100%;
+	margin: auto;
+	padding: 1em 1em 0 0;
+}
+
+input, select, textarea {
+	font-family: 'Merriweather',serif, sans-serif;
+	font-size: 1.5em;
+    box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
+    background: white;
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+	outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+	border-color:  rgb(166, 187, 207); /* When entering form information, make this visible to user */
+}
+
+input.error, textarea.error {
+	border-color: red; /* When error class is added, make this visible to user */
+}
+
+/* Main Button Styling */
+button {
+	cursor: pointer; /* Show that user can click on button */
+	font-size: 2.5em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 0.5em;
+    background: linear-gradient(90deg,  rgb(166, 187, 207), #90a5b9,  rgb(166, 187, 207));
+	margin-bottom: 1em;
+	outline:none;
+	font-family: 'Merriweather',serif, sans-serif;
+}
+
+button:hover {
+	/* On hover, add box shadow */
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 5px 20px 0 rgba(0,0,0,0.15);
+}
+
+button[disabled] {
+	background: white; /* When disabled, make background white */
+	color: #5e7081;
+	cursor: default; /* Hide ability for users to click on button. */
+	box-shadow: none;
+}
+
+/* Pop-Up container */
+.popup-container {
+	width: 100%; 
+	height: 100%; 
+	display: none; 
+	position: fixed; 
+	background-color: rgba(0,0,0,0.5); /* Opacity so can still see webpage */
+	z-index: 3000; /* Sit on top of all content */
+}
+  
+.popup-message {
+	animation: fadeIn 1s; /* Fade in pop-up message */
+	animation: grow 1s; /* Grow pop-up message */
+	padding: 1.5em;
+	height: auto;
+	width: 70%;
+	border-radius: 1em; 
+	margin: 30% auto;
+	background-color: white;
+	box-sizing: border-box;
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.15);
+}
+
+/* Pop-Up Message Paragraph */
+.popup-message p {
+	font-size: 3em;
+	line-height: 1.5em;
+}
+
+/* Pop-Up Exit Link */
+.exit {
+	cursor: pointer; /* Show that users can click to close */
+	color: black;
+	font-size: 4em;
+	font-weight: bold;
+	text-align: right;
+	float: right;
+}
+  
+.exit:hover {
+	color: #5e7081; /* While hovering, change colour of cross */
+}
+
+/* Modal Images */
+
+/* Modal Container/Background */
+.modal {
+	display: none; /* Hidden by default in case JS not available */
+	animation: fadeIn ease-in 0.5s; /* Fade in modal */
+	width: 100%;
+	height: 100%;
+	position: fixed; 
+	padding-top: 5em; 
+	left: 0;
+	top: 0;
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.95); /* Opacity so can still see webpage */
+	z-index: 2000; /* Sit on top of webpage content */
+}
+  
+/* Modal Image  */
+.modal-image {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 700px;
+}
+  
+/* Modal Image Description */
+#caption {
+	width: 80%;
+	text-align: center;
+	color: white;
+	padding: 0.5em;
+	height: 20%;
+	margin: auto;
+	display: block;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+  
+/* Modal Close Link */
+.close {
+	cursor: pointer; /* Show that user can click on cross to close */
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	color: white;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+  
+.close:hover {
+	color: #5e7081; /* While hovering, change colour of close link */
+}
+
+/* Responsive Design for Extra Large Devices (Laptops/Desktops/Ipad Pro Horizontal 1200px and Up) */
+
+@media only screen and (min-width: 1200px) { 
+
+	/* Menu responsive design */
+	.icon i, .icon p, #mobileNav a {
+		display: none; /* Hide mobile menu when in desktop/ipad view */
+	}
+
+	#main-menu {
+		display: flex;
+		flex-direction: row;
+		height: 7.5em;
+		position: fixed;
+	}
+	
+	#main-menu .book-button {
+		position: relative;
+		margin: auto;
+		padding-right: 2.5em;
+	}
+
+	/* Page Header Responsive Design */
+	#page-header {
+		height: 42em; /* Resize header for desktop/ipad view */
+	}
+
+	/* Body Section Responsive Design */
+	.info-bottom, .info-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.info-top {
+		flex-direction: row-reverse; /* Display information in neat rows when in desktop/ipad view */
+		text-align: left;
+	}
+
+	.info-top article {
+		padding-left: 6em;
+		padding-right: 1em;
+		width: 50%;
+	}
+
+	.info-bottom {
+		flex-direction: row; /* Display information in neat rows when in desktop/ipad view */
+		text-align: right;
+	}
+	
+	.info-bottom article {
+		padding-left: 1em;
+		padding-right: 6em;
+		width: 50%;
+	}
+
+	/* Secondary Menu Responsive Design */
+	#secondary-menu li {
+		display: inline; /* Display footer horizontally when in desktop/ipad view */
+	}
+
+	#seconday-menu a {
+		font-size: 1.5em;
+	}
+
+	/* Tour Page Responsive Design */
+	#tour-info {
+		display: flex;
+		flex-direction: row; /* Display tour information as row when in desktop/ipad view */
+	}
+
+	#main-info .tour-para {
+		display: none; /* Hide tour paragraph when in desktop/ipad view */
+	}	
+
+	/* Gallery Page Responsive Design */
+	#slideshow {
+		padding-top: 10em;
+	}
+
+	#slideshow img {
+		width: 40%; /* Decrease slideshow size when in desktop/ipad view */
+	}
+}
+
+/* Mobile/Smaller Devices (Mobile and Smaller Devices (i.e. iPad, etc.) Below 1200px) */
+@media only screen and (max-width: 1199px) {
+
+	/* Main Menu Responsive Design */
+	#main-menu #desktop-menu {
+		display: none; /* Hide normal menu when in mobile view/smaller devices longer visible */
+	}
+
+	/* Tour Page Responsive Design */
+	#tour_table {
+		display: none; /* Hide tour table when in mobile/smaller device view */
+	}
+}
+
+/* Animations */
+
+/* Animation for fading in each page, modals, etc. */
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+/* Animation for showing lightning photo */
+@keyframes lightning {
+	0% {
+		opacity:0;
+	}
+	20% {
+		opacity:0.05;
+	}
+	40% {
+		opacity:0;
+	}
+	50% {
+		opacity:0.1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+/* Animation for growing logo and pop-ups */
+@keyframes grow
+{
+	0% {
+		transform: scale(1);
+	}
+    50% {
+		transform: scale(1.1);
+	}
+    100% {
+		transform: scale(1);
+	}
+}
+
+/* Animation for dropping main header text */
+@keyframes drop {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	  }
+}
+
+/* Animation for shaking main header */
+@keyframes shake {
+	0% { 
+		transform: translate(1px, 1px) rotate(0deg); 
+	}
+	5% { 
+		transform: translate(2px, 0px) rotate(1deg); 
+	}
+	10% { 
+		transform: translate(-1px, -2px) rotate(-1deg); 
+	}
+	15% { 
+		transform: translate(0px, 1px) rotate(0deg); 
+	}
+	20% { 
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	25% { 
+		transform: translate(1px, 2px) rotate(-1deg); 
+	}
+	30% { 
+		transform: translate(3px, 2px) rotate(0deg); 
+	}
+	35% { 
+		transform: translate(0px, 0px) rotate(-1deg); 
+	}
+	40% { 
+		transform: translate(1px, -1px) rotate(1deg); 
+	}
+	45% { 
+		transform: translate(3px, -1px) rotate(0deg); 
+	}
+	50% { 
+		transform: translate(-1px, 2px) rotate(-1deg); 
+	}
+	55% { 
+		transform: translate(0px, -1px) rotate(1deg); 
+	}
+	60% { 
+		transform: translate(-3px, 1px) rotate(0deg); 
+	}
+	65% { 
+		transform: translate(1px, 0px) rotate(1deg); 
+	}
+	70% { 
+		transform: translate(3px, 1px) rotate(-1deg); 
+	}
+	75% { 
+		transform: translate(0px, -1px) rotate(0deg); 
+	}
+	80% { 
+		transform: translate(-1px, -1px) rotate(1deg); 
+	}
+	85% { 
+		transform: translate(1px, -2px) rotate(-1deg); 
+	}
+	90% { 
+		transform: translate(1px, 2px) rotate(0deg); 
+	}
+	95% { 
+		transform: translate(1px, -2px) rotate(-1deg); 
+	}
+	100% { 
+		transform: translate(0px, 0px) rotate(0deg);
+	}
+}
