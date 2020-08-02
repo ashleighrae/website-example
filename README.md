@@ -13,6 +13,3 @@ Including HTML, CSS & JS languages.
 
 ## View Website Example 
 Please visit: https://rawcdn.githack.com/ashleighrae/website-example/master/index.html
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
