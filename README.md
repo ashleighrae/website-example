@@ -12,7 +12,7 @@ Including HTML, CSS & JS languages.
 ✔️ Tour Page
 
 ## View Website Example 
-Copy & paste: https://rawcdn.githack.com/ashleighrae/website-example/master/index.html into your browser.
+Please visit: https://rawcdn.githack.com/ashleighrae/website-example/master/index.html
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
