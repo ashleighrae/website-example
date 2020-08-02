@@ -1,4 +1,4 @@
-# Athena Resort Themed Website Example ⚡️
+# Greek Resort Themed Website Example ⚡️
 
 ## A modern, simple and responsive website example!
 Including HTML, CSS & JS languages.
