@@ -8,3 +8,6 @@ Including HTML, CSS & JS languages.
 ✔️ Booking Page\
 ✔️ Direction Page\
 ✔️ Tour Page
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
